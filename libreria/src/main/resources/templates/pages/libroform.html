@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Home</title>
+</head>
+<body>
+<!--Reutilizar el fragmento NAV-->
+<div th:replace="./fragments/nav :: navbar"></div>
+
+</body>
+</html>
+
+<form class="max-w-sm mx-auto mt-20 space-y-8">
+    <!-- Tus campos de entrada aquí -->
+</form>
+<form class="max-w-sm mx-auto space-y-8">
+    <div>
+        <label for="visitors1" class="block mb-2.5 text-sm font-medium text-heading">titulo</label>
+        <input type="text" id="visitors1" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-2.5 py-2 shadow-xs placeholder:text-body" required />
+    </div>
+
+    <div>
+        <label for="visitors2" class="block mb-2.5 text-sm font-medium text-heading">editorial</label>
+        <input type="text" id="visitors2" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" required />
+    </div>
+
+    <div>
+        <label for="visitors3" class="block mb-2.5 text-sm font-medium text-heading">genero</label>
+        <input type="text" id="visitors3" class="bg-neutral-secondary-medium border border-default-medium text-heading text-base rounded-base focus:ring-brand focus:border-brand block w-full px-3.5 py-3 shadow-xs placeholder:text-body" required />
+    </div>
+
+    <div>
+        <label for="visitors4" class="block mb-2.5 text-sm font-medium text-heading">numero_pagina</label>
+        <input type="text" id="visitors4" class="bg-neutral-secondary-medium border border-default-medium text-heading text-base rounded-base focus:ring-brand focus:border-brand block w-full px-4 py-3.5 shadow-xs placeholder:text-body" required />
+    </div>
+</form>
